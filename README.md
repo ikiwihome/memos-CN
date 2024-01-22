@@ -1,6 +1,6 @@
 <img height="56px" src="https://www.usememos.com/full-logo-landscape.png" alt="Memos" />
 
-A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.
+隐私至上的轻量级笔记服务。轻松捕捉并分享您的精彩想法。
 
 <a href="https://www.usememos.com">Home Page</a> •
 <a href="https://www.usememos.com/blog">Blogs</a> •
