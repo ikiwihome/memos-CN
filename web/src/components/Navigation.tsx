@@ -102,16 +102,10 @@ const Navigation = (props: Props) => {
     title: t("common.sign-in"),
     icon: <Icon.LogIn className="mr-3 w-6 h-auto opacity-70" />,
   };
-  const aboutNavLink: NavLinkItem = {
-    id: "header-about",
-    path: "/about",
-    title: t("common.about"),
-    icon: <Icon.Smile className="mr-3 w-6 h-auto opacity-70" />,
-  };
 
   const navLinks: NavLinkItem[] = user
     ? [homeNavLink, timelineNavLink, resourcesNavLink, exploreNavLink, profileNavLink, inboxNavLink, archivedNavLink, settingNavLink]
-    : [exploreNavLink, signInNavLink, aboutNavLink];
+    : [exploreNavLink, signInNavLink];
 
   return (
     <header
