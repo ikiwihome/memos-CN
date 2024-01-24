@@ -1,6 +1,7 @@
 <img height="56px" src="https://www.usememos.com/full-logo-landscape.png" alt="Memos" />
 
 隐私至上的轻量级笔记服务。轻松捕捉并分享您的精彩想法。
+感谢大佬usememos/memos的项目，我进行了一些彻底汉化。
 
 <a href="https://www.usememos.com">Home Page</a> •
 <a href="https://www.usememos.com/blog">Blogs</a> •
@@ -26,10 +27,10 @@
 ## Deploy with Docker in seconds
 
 ```bash
-docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable
+docker run -d --name=memos --hostname=memos --restart=unless-stopped -e "TZ=Asia/Shanghai" -p 5230:5230 -v /data/memos:/var/opt/memos ikiwicc/memos:latest
 ```
 
-> The `~/.memos/` directory will be used as the data directory on your local machine, while `/var/opt/memos` is the directory of the volume in Docker and should not be modified.
+> The `/data/memos/` directory will be used as the data directory on your local machine, while `/var/opt/memos` is the directory of the volume in Docker and should not be modified.
 
 Learn more about [other installation methods](https://www.usememos.com/docs/install).
 
